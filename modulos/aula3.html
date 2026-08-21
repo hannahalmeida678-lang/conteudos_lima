@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias HTML</title>
+</head>
+<body>
+    <h1>
+        Categorias de conteúdo
+    </h1>
+    <h3>
+        elemento de bloco
+    </h3>
+    <p>
+        ocupam toda a largura disponivel. Exemplo: &LT;div&GT;  &LT;h1&GT;  &LT;section&GT;  &LT;article&GT; 
+    </p>
+ <h3>
+        elemento de linha
+    </h3>
+    <p>
+    ocupam o espaco necessario de linha Exemplo: &LT;a&GT;  &LT;spam&GT;  &LT;sstrong&GT;  &LT;em&GT; 
+    </p>
+<H5>
+ regras
+</H5>
+<h5>
+    <p>
+        elementos de linha nao podem conter elemntos de bloco
+    </p>
+</h5>
+ <h6>
+    Exemplo incorreto:
+ </h6>
+ <h6>
+  <span><div>texto</div></span>
+ </h6>
+<h6>
+        exemplo correto
+</h6>
+<div><span>texto</span></div>
+
+<H3>
+    CATEGORIAS DE CONTEUDO:
+</H3>
+
+<h4>
+    metadata content
+</h4>
+
+<p>
+    sao informaçoes de configuraçoes do arquivo HTML
+</p>
+
+<p>&lt;title&gt; informa o titulo</p>
+<p>&lt;meta&gt; definir codificaçao</p>
+<p>&lt;link&gt; &lt;style&gt; importar e anexa css na pagina</p>
+<p>&lt;script&gt; importa/anexar comando de java script</p> 
+ <h4>
+    flow content
+ </h4>
+<p>representa maior parte dos elementos usados no body</p>
+<p>&lt;div&gt; criar uma divisão generica, agrupar "pedaços do codigo"</p>
+<p>&lg;p&gt; criar paragrafos</p>
+<p>&lg;section&gt; agrupa conteudos que partilham do mesmo assunto/ideia </p>
+<p>&lg;article&gt; conteudo independente e completo pr si só(faz sentido sozinho) </p>
+<p>&lg;img&gt; importar, imagem, desenho e foto(nao percisa de tag de fechamento) </p>
+<p>&lg;form&gt; criar formularios, usuario pode digitar dados e/ou enviar mensagem</p>
+ <h4>
+    sectioning content
+ </h4>
+<p>
+    organiza grandes areas do documento
+</p>
+<p>&lg;section&gt; agrupa conteudos que partilham do mesmo assunto/ideia </p>
+<p>&lg;article&gt; conteudo independente e completo pr si só(faz sentido sozinho) </p>
+<p>&lg;aside&gt;: serve para guardar conteudo secundario(links  relacionados, anuncios, biografia, etc)</p>
+<p>&lg;nav&gt; agrupa links de navegação</p>
+
+<h4>
+    ]heading content
+</h4>
+
+<p>h1, h2, h3, h4, h5, h6  adicionar titulos e subtitulos</p>
+
+<p>&lg;hgroup&gt; agrupar elementos de titulo exemplo:</p>
+<hgroup>
+    <h5>aprenda HTML</h5>
+    <h6>SENAI americana</h6>
+</hgroup>
+ <h4>
+    phrasingcontent
+</h4>
+<p>
+    elemntos que marcam textos ou parte de textos
+</p>
+
+<p>&lg;spam&gt; um bloco generico, não muda nada sozinho, porem podem aplicar css ou chamar funções/comprtamento </p>
+<p>&lg;a&gt; cria link para direcionar usuario para outra pagina, utilizando o atributo href
+    
+ex: <a href="https://coolors.co/" target="_blank"> clique para conhecer coolors </a>
+
+<p>&lg;strong&gt; deixa tudo em <strong>negrito</strong> </p>
+<p>&lg;em&gt; serve pra deixar o texto em <em>italico</em></p>
+<p>&lg;mark&gt; adiciona um marcador em uma parte do <mark style = "background-color: pink;"> texto </mark> 
+
+    <h4>
+        embedded content
+    </h4>
+    <p>utilizado para inserir conteudo</p>
+<p>&lg;video&gt; adiciona video (pode mostrar botoes de play e pause)</p>
+<p>&lg;canvas&gt; cria uma tela em branco que pode ser usada em javascript</p>
+<p>&lg;svg&gt;vai desenhar graficos baseados em vetores</p>
+<p>&lg;iframe&gt; coloca outra pagina inteira do seu web site (muito usado para maas e videos)</p>
+
+<h4>
+    interative content
+</h4>
+<p>
+    serve para ter interaçoes com usuario
+</p>
+<p>&lg;a&gt; cria link para direcionar usuario para outra pagina, utilizando o atributo href
+<p>&lg;button&gt; cria botão. ex: <button>teste</button></p>
+<p>&lg;input&gt; receber dados do usuario. dentre os dados aceitos estão: </p>
+<p>type="text":campo de texto curto;
+    type="password": oculta caracteres digitados
+    type="email": valida dados especificox
+    type="checkbox" ou radio: caixas de escolha unica.
+    ***type e uma tag que não precisa de fechamento
+</p>
+<p>&lg;select&gt; cria uma caixa de seleçao em formato de linha suspensa(dropdown)
+
+    <select name="fruta" id="fruta">
+        <option value="" disable selected >selecione uma opção</option>
+    <option value="maçã">maçã</option>
+    <option value="banana">banana</option>
+    <option value="morango">morango</option>
+</select>
+    fd <br>
+    f <br>
+    g <br>
+    g <br>
+
+</p>
+<p>&lg;text area&gt;cria caixas de textos com varias linhas, serve para texto e imagens</p>
+
+
+
+
+
+</body>
+</html>
