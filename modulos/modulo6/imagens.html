@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Responsivas</title>
+    <style>
+        .imagem-responsiva{
+            height: auto;
+            max-width: 100%;
+            display: block;
+        }
+        .css-alternativo{
+            width: 100%;
+            height: auto;
+            max-width: 1200px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>imagens responsivas </h1>
+    <h2>imagens com html puro aqui:</h2>
+    <p>para retornar, clique <button><a href="index.html" style="text-decoration: none;">retornar</a></button></p>
+    
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/imagem_300.jpg" type="image/jpg">
+        <source media="(max-width:1050px)" srcset="imagens/imagem_600.jpg" type="image/jpg">
+        <img src="imagens/imagem_1200.jpg" alt="paisagem">
+    </picture>
+
+    <h2>Imagen responsiva utilizando css</h2>
+    <img 
+    class="imagem-responsiva"
+    src="imagens/imagem_600.jpg" 
+    srcset="imagens/imagem_300.jpg 300w, imagens/imagem_600.jpg 600w, imagens/imagem_1200.jpg 1200w"
+    sizes="(max-width: 600px) 100vw 600px"
+    alt="imagem responsiva utilizando css" 
+    width="600"
+    height="450"
+    loading="lazy">
+ <h2>maneira alternativa com css</h2>
+ <img src="imagens/imagem_1200.jpg" alt="paisagem">
+</body>
+</html>
