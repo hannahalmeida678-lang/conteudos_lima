@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro cliente</title>
+</head>
+<body>
+    <h1>cadastro de cliente</h1>
+    <form action=""> 
+        <label for="nome"> 
+            nome:
+        </label>
+        <br>
+        <input type="text"   
+        id="nome"
+        name="nome"
+        required placeholder="digite o nome completo">
+        <br><br>
+        <label for="emai">
+            email:
+        </label>
+        <br><br>
+        <input type="email" 
+        name="email" 
+        id="email"
+        required placeholder="digite um email valido">
+        <br><br>
+        <label for="idade">
+            idade:
+        </label>
+        <br><br>
+        <input type="number" 
+        min="18"
+        max="120"
+        name="idade" 
+        id="idade"
+        required placeholder="digite sua idade">
+        <br><br>
+
+    <label for="telefone">
+        telefone:
+    </label>
+    <input type="tel"
+    pattern="[0-9]{11}"
+    placeholder="(00)00000-0000">
+    <br><br>
+        <button type="submit">Cadastrar</button>
+
+    </form>
+</body>
+</html>
