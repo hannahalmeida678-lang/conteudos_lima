@@ -1,0 +1,84 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .cupom-gamer{
+            /*limitar a largura maxima*/
+            width: 290px;
+            background-color: #fef;
+            /*20 px cima/baixo e 30px esquerda/direita */
+            padding: 30px 20px;
+            /* a extremidade da box model */
+            border: 3px dashed #e11d48;
+            margin: 25px;
+            /* a distancia em relação a outras tags */
+        }
+        .btn-gamer{ 
+            /* permite que o link aceite padding com segurança */
+            display: inline-block;
+            background-color: #6c5ce7;
+            color: #ffffff;
+            /*retira o sublinhado do link*/
+            text-decoration: none;
+            /* 14px em cima e 28px nas laterais */
+            padding: 14px 28px;
+            /* arredondar os cantos */
+            border-radius: 10px;
+            font-weight: 700;
+            transition: all 0.10s ease;
+            
+        }
+        .btn-gamer:hover{
+            background-color: #8174f2;
+            transform: translateY(-3px);
+        }
+        .btn-gamer:active{
+            transform: translateY(2px);
+        }
+        .btn-secundario:hover{
+            cursor: pointer;
+            background: transparent;
+            border: 3px dashed blue;
+            color: rgb(0, 162, 255);
+             display: inline-block;
+           
+
+            /*retira o sublinhado do link*/
+            text-decoration: none;
+            /* 14px em cima e 28px nas laterais */
+            padding: 14px 28px;
+            /* arredondar os cantos */
+            border-radius: 10px;
+            font-weight: 700;
+            transition: all 0.10s ease;
+        }
+        .btn-secundario{
+            display: inline-block;
+            background-color: #6c5ce7;
+            color: #ffffff;
+            /*retira o sublinhado do link*/
+            text-decoration: none;
+            /* 14px em cima e 28px nas laterais */
+            padding: 14px 28px;
+            /* arredondar os cantos */
+            border-radius: 10px;
+            font-weight: 700;
+            transition: all 0.10s ease;
+        }
+    </style>
+ </head>
+ <body>
+    <a href="" class="btn-gamer">iniciar partida</a> 
+    <button class="btn-secundario">Configurações</button>
+    <div class="cupom-gamer">
+    <h3>cupom DEV100</h3>
+    <p>desconto liberado na loja!!</p>
+</div>
+ </body>
+ </html>
