@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify content</title>
+    <style>
+        .navbar-gamer{
+            /* ligando o flexbox no container*/
+            display: flex;
+            background: #0f172a;
+            /* centraliza o elemento na vertical */
+            align-items: center;
+            padding: 0px 24px;
+            height: 70px;
+            /* adiciona elementos nas extremidades */
+            justify-content: space-between;
+        }
+        .menu-links{
+            display: flex;
+            /*criar espaço entre links*/
+            gap: 20px;
+        }
+        .personagem{
+            display: flex;
+            background: rgb(209, 167, 167);
+            height: 300px;
+            align-items: center;
+            justify-content: center;
+            margin: 24px 0px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        div{
+            color: white;
+        }
+        h3{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar-gamer">
+        <div class="logo">DEV. GAMES</div>
+        <nav class="menu-links"> 
+            <a href="">inicio</a>
+            <a href="">catalogo</a>
+            <a href="">perfil</a>
+        </nav>
+    </header>
+
+    <div class="personagem"></div>
+    <h3>
+        aristoteles
+    </h3>
+   
+</body>
+</html>
